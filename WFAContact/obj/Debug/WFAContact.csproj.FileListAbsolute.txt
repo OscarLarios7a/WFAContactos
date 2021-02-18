@@ -1,0 +1,10 @@
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\WFAContact\WFAContact\bin\Debug\WFAContact.exe.config
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\WFAContact\WFAContact\bin\Debug\WFAContact.exe
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\WFAContact\WFAContact\bin\Debug\WFAContact.pdb
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\WFAContact\WFAContact\bin\Debug\Guna.UI.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\WFAContact\WFAContact\obj\Debug\WFAContact.csprojResolveAssemblyReference.cache
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\WFAContact\WFAContact\obj\Debug\WFAContact.Properties.Resources.resources
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\WFAContact\WFAContact\obj\Debug\WFAContact.csproj.GenerateResource.Cache
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\WFAContact\WFAContact\obj\Debug\WFAContact.exe
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\WFAContact\WFAContact\obj\Debug\WFAContact.pdb
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\WFAContact\WFAContact\obj\Debug\WFAContact.Presentacion.Contacts.resources
