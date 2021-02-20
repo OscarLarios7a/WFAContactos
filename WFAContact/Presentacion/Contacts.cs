@@ -41,7 +41,20 @@ namespace WFAContact.Presentacion
             m = 0;
         }
 
-       
+        private void Contacts_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbtnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbtnAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void gbtnMax_Click(object sender, EventArgs e)
         {
