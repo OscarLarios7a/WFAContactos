@@ -11,3 +11,4 @@ D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\WFAContact\WFAContact\obj\Deb
 C:\Users\Oscar Larios\Documents\Visual Studio 2015\Projects\WFAContactos\WFAContact\bin\Debug\WFAContact.exe.config
 C:\Users\Oscar Larios\Documents\Visual Studio 2015\Projects\WFAContactos\WFAContact\obj\Debug\WFAContact.exe
 C:\Users\Oscar Larios\Documents\Visual Studio 2015\Projects\WFAContactos\WFAContact\obj\Debug\WFAContact.pdb
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\WFAContact\WFAContact\obj\Debug\WFAContact.Presentacion.fContact.resources

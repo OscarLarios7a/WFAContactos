@@ -53,6 +53,9 @@ namespace WFAContact.Presentacion
 
         private void gbtnAgregar_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            fContact fcontact = new fContact();
+            fcontact.Show();
 
         }
 
@@ -70,6 +73,9 @@ namespace WFAContact.Presentacion
                 WindowState = FormWindowState.Minimized;
             else if (WindowState == FormWindowState.Minimized)
                 WindowState = FormWindowState.Normal;
+
+            
+
         }
     }
 }
