@@ -41,22 +41,23 @@ namespace WFAContact.Presentacion
             contacts.Show();
         }
 
-        private void fContact_MouseDown(object sender, MouseEventArgs e)
+       
+        private void panel2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (m == 1)
+                this.SetDesktopLocation(MousePosition.X - mx, MousePosition.Y - my);
+        }
+
+        private void panel2_MouseUp(object sender, MouseEventArgs e)
+        {
+            m = 0;
+        }
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
         {
             m = 1;
             mx = e.X;
             my = e.Y;
-        }
-
-        private void fContact_MouseMove(object sender, MouseEventArgs e)
-        {
-            if(m == 1)
-                this.SetDesktopLocation(MousePosition.X - mx, MousePosition.Y - my);
-        }
-
-        private void fContact_MouseUp(object sender, MouseEventArgs e)
-        {
-            m = 0;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

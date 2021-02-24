@@ -93,6 +93,26 @@ namespace WFAContact.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_cancel_subscription_48px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_cancel_subscription_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cancel_subscription_48px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_cancel_subscription_48px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_google_web_search_60px {
             get {
                 object obj = ResourceManager.GetObject("icons8_google_web_search_60px", resourceCulture);
@@ -106,6 +126,36 @@ namespace WFAContact.Properties {
         internal static System.Drawing.Bitmap icons8_google_web_search_60px1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_google_web_search_60px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_save_48px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_save_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_save_48px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_save_48px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_save_48px_3 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_save_48px_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

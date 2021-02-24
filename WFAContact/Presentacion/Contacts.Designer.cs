@@ -34,18 +34,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.gbtnMin = new Guna.UI.WinForms.GunaButton();
-            this.gbtnMax = new Guna.UI.WinForms.GunaButton();
-            this.gbtnExit = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.gLblBuscar = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel5 = new Guna.UI.WinForms.GunaPanel();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaPanel4 = new Guna.UI.WinForms.GunaPanel();
+            this.gTxtBuscar = new Guna.UI.WinForms.GunaTextBox();
             this.gbtnAgregar = new Guna.UI.WinForms.GunaButton();
             this.gbtnBuscar = new Guna.UI.WinForms.GunaButton();
-            this.gTxtBuscar = new Guna.UI.WinForms.GunaTextBox();
+            this.gbtnMin = new Guna.UI.WinForms.GunaButton();
+            this.gbtnMax = new Guna.UI.WinForms.GunaButton();
+            this.gbtnExit = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel3.SuspendLayout();
             this.gunaPanel5.SuspendLayout();
@@ -69,85 +69,10 @@
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(885, 40);
             this.gunaPanel1.TabIndex = 0;
+            this.gunaPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPanel1_Paint);
             this.gunaPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.gunaPanel1_MouseDown);
             this.gunaPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gunaPanel1_MouseMove);
             this.gunaPanel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.gunaPanel1_MouseUp);
-            // 
-            // gbtnMin
-            // 
-            this.gbtnMin.AnimationHoverSpeed = 0.07F;
-            this.gbtnMin.AnimationSpeed = 0.03F;
-            this.gbtnMin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(145)))), ((int)(((byte)(61)))));
-            this.gbtnMin.BorderColor = System.Drawing.Color.Black;
-            this.gbtnMin.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gbtnMin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gbtnMin.FocusedColor = System.Drawing.Color.Empty;
-            this.gbtnMin.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gbtnMin.ForeColor = System.Drawing.Color.White;
-            this.gbtnMin.Image = global::WFAContact.Properties.Resources.min_64px;
-            this.gbtnMin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gbtnMin.ImageSize = new System.Drawing.Size(40, 40);
-            this.gbtnMin.Location = new System.Drawing.Point(755, 0);
-            this.gbtnMin.Name = "gbtnMin";
-            this.gbtnMin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gbtnMin.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gbtnMin.OnHoverForeColor = System.Drawing.Color.White;
-            this.gbtnMin.OnHoverImage = null;
-            this.gbtnMin.OnPressedColor = System.Drawing.Color.Black;
-            this.gbtnMin.Size = new System.Drawing.Size(40, 40);
-            this.gbtnMin.TabIndex = 2;
-            this.gbtnMin.Click += new System.EventHandler(this.gbtnMin_Click);
-            // 
-            // gbtnMax
-            // 
-            this.gbtnMax.AnimationHoverSpeed = 0.07F;
-            this.gbtnMax.AnimationSpeed = 0.03F;
-            this.gbtnMax.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(55)))), ((int)(((byte)(64)))));
-            this.gbtnMax.BorderColor = System.Drawing.Color.Black;
-            this.gbtnMax.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gbtnMax.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gbtnMax.FocusedColor = System.Drawing.Color.Empty;
-            this.gbtnMax.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gbtnMax.ForeColor = System.Drawing.Color.White;
-            this.gbtnMax.Image = global::WFAContact.Properties.Resources.max_64px;
-            this.gbtnMax.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gbtnMax.ImageSize = new System.Drawing.Size(40, 40);
-            this.gbtnMax.Location = new System.Drawing.Point(795, 0);
-            this.gbtnMax.Name = "gbtnMax";
-            this.gbtnMax.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gbtnMax.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gbtnMax.OnHoverForeColor = System.Drawing.Color.White;
-            this.gbtnMax.OnHoverImage = null;
-            this.gbtnMax.OnPressedColor = System.Drawing.Color.Black;
-            this.gbtnMax.Size = new System.Drawing.Size(40, 40);
-            this.gbtnMax.TabIndex = 1;
-            this.gbtnMax.Click += new System.EventHandler(this.gbtnMax_Click);
-            // 
-            // gbtnExit
-            // 
-            this.gbtnExit.AnimationHoverSpeed = 0.07F;
-            this.gbtnExit.AnimationSpeed = 0.03F;
-            this.gbtnExit.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
-            this.gbtnExit.BorderColor = System.Drawing.Color.Black;
-            this.gbtnExit.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gbtnExit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gbtnExit.FocusedColor = System.Drawing.Color.Empty;
-            this.gbtnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gbtnExit.ForeColor = System.Drawing.Color.White;
-            this.gbtnExit.Image = global::WFAContact.Properties.Resources.exit_64px;
-            this.gbtnExit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gbtnExit.ImageSize = new System.Drawing.Size(40, 40);
-            this.gbtnExit.Location = new System.Drawing.Point(835, 0);
-            this.gbtnExit.Name = "gbtnExit";
-            this.gbtnExit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gbtnExit.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gbtnExit.OnHoverForeColor = System.Drawing.Color.White;
-            this.gbtnExit.OnHoverImage = null;
-            this.gbtnExit.OnPressedColor = System.Drawing.Color.Black;
-            this.gbtnExit.Size = new System.Drawing.Size(50, 40);
-            this.gbtnExit.TabIndex = 0;
-            this.gbtnExit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gbtnExit.Click += new System.EventHandler(this.gbtnExit_Click);
             // 
             // gunaPanel2
             // 
@@ -258,6 +183,25 @@
             this.gunaPanel4.Size = new System.Drawing.Size(885, 75);
             this.gunaPanel4.TabIndex = 5;
             // 
+            // gTxtBuscar
+            // 
+            this.gTxtBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.gTxtBuscar.BaseColor = System.Drawing.SystemColors.Window;
+            this.gTxtBuscar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtBuscar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gTxtBuscar.FocusedBaseColor = System.Drawing.Color.White;
+            this.gTxtBuscar.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.gTxtBuscar.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtBuscar.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.gTxtBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtBuscar.Location = new System.Drawing.Point(112, 15);
+            this.gTxtBuscar.Name = "gTxtBuscar";
+            this.gTxtBuscar.PasswordChar = '\0';
+            this.gTxtBuscar.Radius = 15;
+            this.gTxtBuscar.SelectedText = "";
+            this.gTxtBuscar.Size = new System.Drawing.Size(464, 45);
+            this.gTxtBuscar.TabIndex = 4;
+            // 
             // gbtnAgregar
             // 
             this.gbtnAgregar.AnimationHoverSpeed = 0.07F;
@@ -312,24 +256,81 @@
             this.gbtnBuscar.Text = "Buscar";
             this.gbtnBuscar.Click += new System.EventHandler(this.gbtnBuscar_Click);
             // 
-            // gTxtBuscar
+            // gbtnMin
             // 
-            this.gTxtBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.gTxtBuscar.BaseColor = System.Drawing.SystemColors.Window;
-            this.gTxtBuscar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtBuscar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gTxtBuscar.FocusedBaseColor = System.Drawing.Color.White;
-            this.gTxtBuscar.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.gTxtBuscar.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtBuscar.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.gTxtBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtBuscar.Location = new System.Drawing.Point(112, 15);
-            this.gTxtBuscar.Name = "gTxtBuscar";
-            this.gTxtBuscar.PasswordChar = '\0';
-            this.gTxtBuscar.Radius = 15;
-            this.gTxtBuscar.SelectedText = "";
-            this.gTxtBuscar.Size = new System.Drawing.Size(464, 45);
-            this.gTxtBuscar.TabIndex = 4;
+            this.gbtnMin.AnimationHoverSpeed = 0.07F;
+            this.gbtnMin.AnimationSpeed = 0.03F;
+            this.gbtnMin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(145)))), ((int)(((byte)(61)))));
+            this.gbtnMin.BorderColor = System.Drawing.Color.Black;
+            this.gbtnMin.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnMin.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gbtnMin.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnMin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnMin.ForeColor = System.Drawing.Color.White;
+            this.gbtnMin.Image = global::WFAContact.Properties.Resources.min_64px;
+            this.gbtnMin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gbtnMin.ImageSize = new System.Drawing.Size(40, 40);
+            this.gbtnMin.Location = new System.Drawing.Point(755, 0);
+            this.gbtnMin.Name = "gbtnMin";
+            this.gbtnMin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gbtnMin.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gbtnMin.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnMin.OnHoverImage = null;
+            this.gbtnMin.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnMin.Size = new System.Drawing.Size(40, 40);
+            this.gbtnMin.TabIndex = 2;
+            this.gbtnMin.Click += new System.EventHandler(this.gbtnMin_Click);
+            // 
+            // gbtnMax
+            // 
+            this.gbtnMax.AnimationHoverSpeed = 0.07F;
+            this.gbtnMax.AnimationSpeed = 0.03F;
+            this.gbtnMax.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(55)))), ((int)(((byte)(64)))));
+            this.gbtnMax.BorderColor = System.Drawing.Color.Black;
+            this.gbtnMax.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnMax.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gbtnMax.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnMax.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnMax.ForeColor = System.Drawing.Color.White;
+            this.gbtnMax.Image = global::WFAContact.Properties.Resources.max_64px;
+            this.gbtnMax.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gbtnMax.ImageSize = new System.Drawing.Size(40, 40);
+            this.gbtnMax.Location = new System.Drawing.Point(795, 0);
+            this.gbtnMax.Name = "gbtnMax";
+            this.gbtnMax.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gbtnMax.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gbtnMax.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnMax.OnHoverImage = null;
+            this.gbtnMax.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnMax.Size = new System.Drawing.Size(40, 40);
+            this.gbtnMax.TabIndex = 1;
+            this.gbtnMax.Click += new System.EventHandler(this.gbtnMax_Click);
+            // 
+            // gbtnExit
+            // 
+            this.gbtnExit.AnimationHoverSpeed = 0.07F;
+            this.gbtnExit.AnimationSpeed = 0.03F;
+            this.gbtnExit.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
+            this.gbtnExit.BorderColor = System.Drawing.Color.Black;
+            this.gbtnExit.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gbtnExit.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnExit.ForeColor = System.Drawing.Color.White;
+            this.gbtnExit.Image = global::WFAContact.Properties.Resources.exit_64px;
+            this.gbtnExit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gbtnExit.ImageSize = new System.Drawing.Size(40, 40);
+            this.gbtnExit.Location = new System.Drawing.Point(835, 0);
+            this.gbtnExit.Name = "gbtnExit";
+            this.gbtnExit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gbtnExit.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gbtnExit.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnExit.OnHoverImage = null;
+            this.gbtnExit.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnExit.Size = new System.Drawing.Size(50, 40);
+            this.gbtnExit.TabIndex = 0;
+            this.gbtnExit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gbtnExit.Click += new System.EventHandler(this.gbtnExit_Click);
             // 
             // Contacts
             // 

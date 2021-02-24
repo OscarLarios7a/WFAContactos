@@ -59,6 +59,11 @@ namespace WFAContact.Presentacion
 
         }
 
+        private void gunaPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void gbtnMax_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
