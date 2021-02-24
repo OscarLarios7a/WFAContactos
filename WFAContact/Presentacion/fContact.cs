@@ -60,9 +60,27 @@ namespace WFAContact.Presentacion
             my = e.Y;
         }
 
+        private void gbtnCancelar_Click(object sender, EventArgs e)
+        {
+            //Mando a llamar a mi metodo Privado de Limpiar caja
+            limpiarCajasTxt();
+        }
+
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        #region METODOS PRIVADOS
+        private void limpiarCajasTxt()
+        {
+            gTxtNombre.Clear();
+            gTxtApellidos.Clear();
+            gTxtTelefono.Clear();
+            gTxtDireccion.Clear();
+            gTxtNombre.Focus();
+        }
+        #endregion
+
     }
 }

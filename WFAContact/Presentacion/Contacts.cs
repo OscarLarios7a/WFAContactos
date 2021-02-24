@@ -53,9 +53,7 @@ namespace WFAContact.Presentacion
 
         private void gbtnAgregar_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            fContact fcontact = new fContact();
-            fcontact.Show();
+            OpenContactDialog();
 
         }
 
@@ -78,9 +76,19 @@ namespace WFAContact.Presentacion
                 WindowState = FormWindowState.Minimized;
             else if (WindowState == FormWindowState.Minimized)
                 WindowState = FormWindowState.Normal;
-
-            
-
         }
+        #region Metodos Privados
+        //Metodos privados para manipular los datos 
+        private void OpenContactDialog()
+        {
+            this.Hide();
+            fContact fcontact = new fContact();
+            fcontact.Enabled = true;
+            fcontact.Show();
+        }
+        #endregion
+
+
+
     }
 }

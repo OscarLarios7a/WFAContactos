@@ -111,6 +111,7 @@
             this.gbtnCancelar.Size = new System.Drawing.Size(153, 46);
             this.gbtnCancelar.TabIndex = 14;
             this.gbtnCancelar.Text = "Cancelar";
+            this.gbtnCancelar.Click += new System.EventHandler(this.gbtnCancelar_Click);
             // 
             // gbtnAceptar
             // 
@@ -365,6 +366,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(629, 398);
             this.Controls.Add(this.panel1);
+            this.Enabled = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fContact";
             this.Text = "fContact";
