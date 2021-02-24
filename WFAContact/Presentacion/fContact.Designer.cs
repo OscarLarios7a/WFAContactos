@@ -32,18 +32,18 @@
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.gbtnCancelar = new Guna.UI.WinForms.GunaButton();
+            this.gbtnAceptar = new Guna.UI.WinForms.GunaButton();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gLblBuscar = new Guna.UI.WinForms.GunaLabel();
+            this.gTxtDireccion = new Guna.UI.WinForms.GunaTextBox();
             this.gTxtApellidos = new Guna.UI.WinForms.GunaTextBox();
             this.gTxtTelefono = new Guna.UI.WinForms.GunaTextBox();
             this.gTxtNombre = new Guna.UI.WinForms.GunaTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.gTxtDireccion = new Guna.UI.WinForms.GunaTextBox();
-            this.gLblBuscar = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gbtnCancelar = new Guna.UI.WinForms.GunaButton();
-            this.gbtnAceptar = new Guna.UI.WinForms.GunaButton();
             this.gbtnMin = new Guna.UI.WinForms.GunaButton();
             this.gbtnMax = new Guna.UI.WinForms.GunaButton();
             this.gbtnExit = new Guna.UI.WinForms.GunaButton();
@@ -65,7 +65,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(763, 503);
+            this.panel1.Size = new System.Drawing.Size(629, 398);
             this.panel1.TabIndex = 0;
             // 
             // panel4
@@ -83,153 +83,8 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 38);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(763, 434);
+            this.panel4.Size = new System.Drawing.Size(629, 329);
             this.panel4.TabIndex = 2;
-            // 
-            // gTxtApellidos
-            // 
-            this.gTxtApellidos.BackColor = System.Drawing.Color.Transparent;
-            this.gTxtApellidos.BaseColor = System.Drawing.SystemColors.Window;
-            this.gTxtApellidos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtApellidos.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gTxtApellidos.FocusedBaseColor = System.Drawing.Color.White;
-            this.gTxtApellidos.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.gTxtApellidos.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtApellidos.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.gTxtApellidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtApellidos.Location = new System.Drawing.Point(169, 96);
-            this.gTxtApellidos.Name = "gTxtApellidos";
-            this.gTxtApellidos.PasswordChar = '\0';
-            this.gTxtApellidos.Radius = 15;
-            this.gTxtApellidos.SelectedText = "";
-            this.gTxtApellidos.Size = new System.Drawing.Size(321, 48);
-            this.gTxtApellidos.TabIndex = 7;
-            // 
-            // gTxtTelefono
-            // 
-            this.gTxtTelefono.BackColor = System.Drawing.Color.Transparent;
-            this.gTxtTelefono.BaseColor = System.Drawing.SystemColors.Window;
-            this.gTxtTelefono.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtTelefono.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gTxtTelefono.FocusedBaseColor = System.Drawing.Color.White;
-            this.gTxtTelefono.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.gTxtTelefono.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtTelefono.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.gTxtTelefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtTelefono.Location = new System.Drawing.Point(169, 157);
-            this.gTxtTelefono.Name = "gTxtTelefono";
-            this.gTxtTelefono.PasswordChar = '\0';
-            this.gTxtTelefono.Radius = 15;
-            this.gTxtTelefono.SelectedText = "";
-            this.gTxtTelefono.Size = new System.Drawing.Size(321, 48);
-            this.gTxtTelefono.TabIndex = 6;
-            // 
-            // gTxtNombre
-            // 
-            this.gTxtNombre.BackColor = System.Drawing.Color.Transparent;
-            this.gTxtNombre.BaseColor = System.Drawing.SystemColors.Window;
-            this.gTxtNombre.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gTxtNombre.FocusedBaseColor = System.Drawing.Color.White;
-            this.gTxtNombre.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.gTxtNombre.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtNombre.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.gTxtNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtNombre.Location = new System.Drawing.Point(169, 30);
-            this.gTxtNombre.Name = "gTxtNombre";
-            this.gTxtNombre.PasswordChar = '\0';
-            this.gTxtNombre.Radius = 15;
-            this.gTxtNombre.SelectedText = "";
-            this.gTxtNombre.Size = new System.Drawing.Size(321, 48);
-            this.gTxtNombre.TabIndex = 5;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 472);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(763, 31);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.panel2.Controls.Add(this.gbtnMin);
-            this.panel2.Controls.Add(this.gbtnMax);
-            this.panel2.Controls.Add(this.gbtnExit);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(763, 38);
-            this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
-            this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
-            this.panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
-            // 
-            // gTxtDireccion
-            // 
-            this.gTxtDireccion.BackColor = System.Drawing.Color.Transparent;
-            this.gTxtDireccion.BaseColor = System.Drawing.SystemColors.Window;
-            this.gTxtDireccion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtDireccion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gTxtDireccion.FocusedBaseColor = System.Drawing.Color.White;
-            this.gTxtDireccion.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.gTxtDireccion.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtDireccion.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.gTxtDireccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtDireccion.Location = new System.Drawing.Point(169, 219);
-            this.gTxtDireccion.Name = "gTxtDireccion";
-            this.gTxtDireccion.PasswordChar = '\0';
-            this.gTxtDireccion.Radius = 15;
-            this.gTxtDireccion.SelectedText = "";
-            this.gTxtDireccion.Size = new System.Drawing.Size(321, 48);
-            this.gTxtDireccion.TabIndex = 8;
-            // 
-            // gLblBuscar
-            // 
-            this.gLblBuscar.AutoSize = true;
-            this.gLblBuscar.Font = new System.Drawing.Font("Segoe UI Historic", 14F, System.Drawing.FontStyle.Bold);
-            this.gLblBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.gLblBuscar.Location = new System.Drawing.Point(71, 43);
-            this.gLblBuscar.Name = "gLblBuscar";
-            this.gLblBuscar.Size = new System.Drawing.Size(92, 25);
-            this.gLblBuscar.TabIndex = 9;
-            this.gLblBuscar.Text = "Nombre:";
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Historic", 14F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(64, 167);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(99, 25);
-            this.gunaLabel1.TabIndex = 10;
-            this.gunaLabel1.Text = "Telefono:";
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI Historic", 14F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.gunaLabel2.Location = new System.Drawing.Point(59, 106);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(104, 25);
-            this.gunaLabel2.TabIndex = 11;
-            this.gunaLabel2.Text = "Apellidos:";
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Historic", 14F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.gunaLabel3.Location = new System.Drawing.Point(57, 228);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(106, 25);
-            this.gunaLabel3.TabIndex = 12;
-            this.gunaLabel3.Text = "Dirección:";
             // 
             // gbtnCancelar
             // 
@@ -245,7 +100,7 @@
             this.gbtnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.gbtnCancelar.Image = global::WFAContact.Properties.Resources.icons8_cancel_subscription_48px;
             this.gbtnCancelar.ImageSize = new System.Drawing.Size(40, 40);
-            this.gbtnCancelar.Location = new System.Drawing.Point(337, 273);
+            this.gbtnCancelar.Location = new System.Drawing.Point(303, 260);
             this.gbtnCancelar.Name = "gbtnCancelar";
             this.gbtnCancelar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.gbtnCancelar.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
@@ -271,7 +126,7 @@
             this.gbtnAceptar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.gbtnAceptar.Image = global::WFAContact.Properties.Resources.icons8_save_48px_3;
             this.gbtnAceptar.ImageSize = new System.Drawing.Size(40, 40);
-            this.gbtnAceptar.Location = new System.Drawing.Point(169, 273);
+            this.gbtnAceptar.Location = new System.Drawing.Point(135, 260);
             this.gbtnAceptar.Name = "gbtnAceptar";
             this.gbtnAceptar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.gbtnAceptar.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
@@ -282,6 +137,151 @@
             this.gbtnAceptar.Size = new System.Drawing.Size(153, 46);
             this.gbtnAceptar.TabIndex = 13;
             this.gbtnAceptar.Text = "Aceptar";
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Historic", 14F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.gunaLabel3.Location = new System.Drawing.Point(23, 215);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(106, 25);
+            this.gunaLabel3.TabIndex = 12;
+            this.gunaLabel3.Text = "Dirección:";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI Historic", 14F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.gunaLabel2.Location = new System.Drawing.Point(25, 93);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(104, 25);
+            this.gunaLabel2.TabIndex = 11;
+            this.gunaLabel2.Text = "Apellidos:";
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Historic", 14F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.gunaLabel1.Location = new System.Drawing.Point(30, 154);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(99, 25);
+            this.gunaLabel1.TabIndex = 10;
+            this.gunaLabel1.Text = "Telefono:";
+            // 
+            // gLblBuscar
+            // 
+            this.gLblBuscar.AutoSize = true;
+            this.gLblBuscar.Font = new System.Drawing.Font("Segoe UI Historic", 14F, System.Drawing.FontStyle.Bold);
+            this.gLblBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.gLblBuscar.Location = new System.Drawing.Point(37, 30);
+            this.gLblBuscar.Name = "gLblBuscar";
+            this.gLblBuscar.Size = new System.Drawing.Size(92, 25);
+            this.gLblBuscar.TabIndex = 9;
+            this.gLblBuscar.Text = "Nombre:";
+            // 
+            // gTxtDireccion
+            // 
+            this.gTxtDireccion.BackColor = System.Drawing.Color.Transparent;
+            this.gTxtDireccion.BaseColor = System.Drawing.SystemColors.Window;
+            this.gTxtDireccion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtDireccion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gTxtDireccion.FocusedBaseColor = System.Drawing.Color.White;
+            this.gTxtDireccion.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.gTxtDireccion.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtDireccion.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.gTxtDireccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtDireccion.Location = new System.Drawing.Point(135, 206);
+            this.gTxtDireccion.Name = "gTxtDireccion";
+            this.gTxtDireccion.PasswordChar = '\0';
+            this.gTxtDireccion.Radius = 15;
+            this.gTxtDireccion.SelectedText = "";
+            this.gTxtDireccion.Size = new System.Drawing.Size(321, 48);
+            this.gTxtDireccion.TabIndex = 8;
+            // 
+            // gTxtApellidos
+            // 
+            this.gTxtApellidos.BackColor = System.Drawing.Color.Transparent;
+            this.gTxtApellidos.BaseColor = System.Drawing.SystemColors.Window;
+            this.gTxtApellidos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtApellidos.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gTxtApellidos.FocusedBaseColor = System.Drawing.Color.White;
+            this.gTxtApellidos.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.gTxtApellidos.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtApellidos.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.gTxtApellidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtApellidos.Location = new System.Drawing.Point(135, 83);
+            this.gTxtApellidos.Name = "gTxtApellidos";
+            this.gTxtApellidos.PasswordChar = '\0';
+            this.gTxtApellidos.Radius = 15;
+            this.gTxtApellidos.SelectedText = "";
+            this.gTxtApellidos.Size = new System.Drawing.Size(321, 48);
+            this.gTxtApellidos.TabIndex = 7;
+            // 
+            // gTxtTelefono
+            // 
+            this.gTxtTelefono.BackColor = System.Drawing.Color.Transparent;
+            this.gTxtTelefono.BaseColor = System.Drawing.SystemColors.Window;
+            this.gTxtTelefono.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtTelefono.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gTxtTelefono.FocusedBaseColor = System.Drawing.Color.White;
+            this.gTxtTelefono.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.gTxtTelefono.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtTelefono.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.gTxtTelefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtTelefono.Location = new System.Drawing.Point(135, 144);
+            this.gTxtTelefono.Name = "gTxtTelefono";
+            this.gTxtTelefono.PasswordChar = '\0';
+            this.gTxtTelefono.Radius = 15;
+            this.gTxtTelefono.SelectedText = "";
+            this.gTxtTelefono.Size = new System.Drawing.Size(321, 48);
+            this.gTxtTelefono.TabIndex = 6;
+            // 
+            // gTxtNombre
+            // 
+            this.gTxtNombre.BackColor = System.Drawing.Color.Transparent;
+            this.gTxtNombre.BaseColor = System.Drawing.SystemColors.Window;
+            this.gTxtNombre.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gTxtNombre.FocusedBaseColor = System.Drawing.Color.White;
+            this.gTxtNombre.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.gTxtNombre.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtNombre.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.gTxtNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtNombre.Location = new System.Drawing.Point(135, 17);
+            this.gTxtNombre.Name = "gTxtNombre";
+            this.gTxtNombre.PasswordChar = '\0';
+            this.gTxtNombre.Radius = 15;
+            this.gTxtNombre.SelectedText = "";
+            this.gTxtNombre.Size = new System.Drawing.Size(321, 48);
+            this.gTxtNombre.TabIndex = 5;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 367);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(629, 31);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.panel2.Controls.Add(this.gbtnMin);
+            this.panel2.Controls.Add(this.gbtnMax);
+            this.panel2.Controls.Add(this.gbtnExit);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(629, 38);
+            this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
+            this.panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
             // 
             // gbtnMin
             // 
@@ -297,7 +297,7 @@
             this.gbtnMin.Image = global::WFAContact.Properties.Resources.min_64px;
             this.gbtnMin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gbtnMin.ImageSize = new System.Drawing.Size(40, 40);
-            this.gbtnMin.Location = new System.Drawing.Point(633, 0);
+            this.gbtnMin.Location = new System.Drawing.Point(499, 0);
             this.gbtnMin.Name = "gbtnMin";
             this.gbtnMin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gbtnMin.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -322,7 +322,7 @@
             this.gbtnMax.Image = global::WFAContact.Properties.Resources.max_64px;
             this.gbtnMax.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gbtnMax.ImageSize = new System.Drawing.Size(40, 40);
-            this.gbtnMax.Location = new System.Drawing.Point(673, 0);
+            this.gbtnMax.Location = new System.Drawing.Point(539, 0);
             this.gbtnMax.Name = "gbtnMax";
             this.gbtnMax.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gbtnMax.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -347,7 +347,7 @@
             this.gbtnExit.Image = global::WFAContact.Properties.Resources.exit_64px;
             this.gbtnExit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gbtnExit.ImageSize = new System.Drawing.Size(40, 40);
-            this.gbtnExit.Location = new System.Drawing.Point(713, 0);
+            this.gbtnExit.Location = new System.Drawing.Point(579, 0);
             this.gbtnExit.Name = "gbtnExit";
             this.gbtnExit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gbtnExit.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -363,7 +363,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 503);
+            this.ClientSize = new System.Drawing.Size(629, 398);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fContact";
