@@ -1,0 +1,36 @@
+[33mcommit a1932b74ed42932f83d60c018017f0e5019785ee[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Oscar Larios <javier.atoaxaca@gmail.com>
+Date:   Tue Feb 23 17:45:37 2021 -0600
+
+    Actualizacion del Form fContacts y agregando los botones de Min,Max y exit en este formulario
+
+[33mcommit 517f7892969929f11e96cc939c6b82622c2fc1ca[m
+Author: Oscar Larios <javier.atoaxaca@gmail.com>
+Date:   Sat Feb 20 16:34:11 2021 -0600
+
+    Agregando la Barra de Busqueda y los Botones de Buscar y Agregar, anexando el DataGridView y fContact
+
+[33mcommit 2b413ea54bd765826d6f9a3e421516031040193a[m
+Merge: 97a9f63 1111344
+Author: Oscar Larios <javier.atoaxaca@gmail.com>
+Date:   Sat Feb 20 16:29:29 2021 -0600
+
+    Agregando Cache
+
+[33mcommit 97a9f632cad71fcbc1aa128b69c20f9c6e59fc99[m
+Author: Oscar Larios <javier.atoaxaca@gmail.com>
+Date:   Sat Feb 20 16:23:45 2021 -0600
+
+    Creacion de los botones de Agregar y buscar y el DataGridView
+
+[33mcommit 1111344ccb5928085ae32df18633a94b4ce92b92[m
+Author: oscarlarios7a <javier.atoaxaca@gmail.com>
+Date:   Wed Feb 17 22:18:17 2021 -0600
+
+    Cargando un DataGridView y un Label al Formulario de Contacto
+
+[33mcommit 9249f514ff5e6c2648223654eb4c3b2b7a942eaa[m
+Author: Oscar Larios <javier.atoaxaca@gmail.com>
+Date:   Wed Feb 17 19:11:22 2021 -0600
+
+    Cargando el proyecto de Contactos

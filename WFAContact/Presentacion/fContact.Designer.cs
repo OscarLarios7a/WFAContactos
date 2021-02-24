@@ -37,8 +37,10 @@
             this.gbtnMin = new Guna.UI.WinForms.GunaButton();
             this.gbtnMax = new Guna.UI.WinForms.GunaButton();
             this.gbtnExit = new Guna.UI.WinForms.GunaButton();
+            this.gTxtNombre = new Guna.UI.WinForms.GunaTextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -81,6 +83,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.gTxtNombre);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 38);
             this.panel4.Name = "panel4";
@@ -163,6 +166,25 @@
             this.gbtnExit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gbtnExit.Click += new System.EventHandler(this.gbtnExit_Click);
             // 
+            // gTxtNombre
+            // 
+            this.gTxtNombre.BackColor = System.Drawing.Color.Transparent;
+            this.gTxtNombre.BaseColor = System.Drawing.SystemColors.Window;
+            this.gTxtNombre.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gTxtNombre.FocusedBaseColor = System.Drawing.Color.White;
+            this.gTxtNombre.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.gTxtNombre.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtNombre.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.gTxtNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtNombre.Location = new System.Drawing.Point(65, 30);
+            this.gTxtNombre.Name = "gTxtNombre";
+            this.gTxtNombre.PasswordChar = '\0';
+            this.gTxtNombre.Radius = 15;
+            this.gTxtNombre.SelectedText = "";
+            this.gTxtNombre.Size = new System.Drawing.Size(464, 45);
+            this.gTxtNombre.TabIndex = 5;
+            // 
             // fContact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,6 +199,7 @@
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.fContact_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -191,5 +214,6 @@
         private Guna.UI.WinForms.GunaButton gbtnMin;
         private Guna.UI.WinForms.GunaButton gbtnMax;
         private Guna.UI.WinForms.GunaButton gbtnExit;
+        private Guna.UI.WinForms.GunaTextBox gTxtNombre;
     }
 }
