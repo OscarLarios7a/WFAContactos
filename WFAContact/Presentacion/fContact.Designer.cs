@@ -32,13 +32,14 @@
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.gTxtNumber = new Guna.UI.WinForms.GunaTextBox();
             this.gTxtNombre = new Guna.UI.WinForms.GunaTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.gbtnMin = new Guna.UI.WinForms.GunaButton();
             this.gbtnMax = new Guna.UI.WinForms.GunaButton();
             this.gbtnExit = new Guna.UI.WinForms.GunaButton();
-            this.gTxtNumber = new Guna.UI.WinForms.GunaTextBox();
+            this.gTxtApellidos = new Guna.UI.WinForms.GunaTextBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -56,19 +57,42 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(763, 503);
+            this.panel1.Size = new System.Drawing.Size(1144, 774);
             this.panel1.TabIndex = 0;
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.gTxtApellidos);
             this.panel4.Controls.Add(this.gTxtNumber);
             this.panel4.Controls.Add(this.gTxtNombre);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 38);
+            this.panel4.Location = new System.Drawing.Point(0, 58);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(763, 434);
+            this.panel4.Size = new System.Drawing.Size(1144, 668);
             this.panel4.TabIndex = 2;
+            // 
+            // gTxtNumber
+            // 
+            this.gTxtNumber.BackColor = System.Drawing.Color.Transparent;
+            this.gTxtNumber.BaseColor = System.Drawing.SystemColors.Window;
+            this.gTxtNumber.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gTxtNumber.FocusedBaseColor = System.Drawing.Color.White;
+            this.gTxtNumber.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.gTxtNumber.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtNumber.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.gTxtNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtNumber.Location = new System.Drawing.Point(98, 154);
+            this.gTxtNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtNumber.Name = "gTxtNumber";
+            this.gTxtNumber.PasswordChar = '\0';
+            this.gTxtNumber.Radius = 15;
+            this.gTxtNumber.SelectedText = "";
+            this.gTxtNumber.Size = new System.Drawing.Size(696, 74);
+            this.gTxtNumber.TabIndex = 6;
             // 
             // gTxtNombre
             // 
@@ -81,21 +105,23 @@
             this.gTxtNombre.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
             this.gTxtNombre.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.gTxtNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtNombre.Location = new System.Drawing.Point(65, 30);
+            this.gTxtNombre.Location = new System.Drawing.Point(98, 46);
+            this.gTxtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gTxtNombre.Name = "gTxtNombre";
             this.gTxtNombre.PasswordChar = '\0';
             this.gTxtNombre.Radius = 15;
             this.gTxtNombre.SelectedText = "";
-            this.gTxtNombre.Size = new System.Drawing.Size(464, 45);
+            this.gTxtNombre.Size = new System.Drawing.Size(696, 74);
             this.gTxtNombre.TabIndex = 5;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 472);
+            this.panel3.Location = new System.Drawing.Point(0, 726);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(763, 31);
+            this.panel3.Size = new System.Drawing.Size(1144, 48);
             this.panel3.TabIndex = 1;
             // 
             // panel2
@@ -106,8 +132,9 @@
             this.panel2.Controls.Add(this.gbtnExit);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(763, 38);
+            this.panel2.Size = new System.Drawing.Size(1144, 58);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -125,14 +152,15 @@
             this.gbtnMin.Image = global::WFAContact.Properties.Resources.min_64px;
             this.gbtnMin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gbtnMin.ImageSize = new System.Drawing.Size(40, 40);
-            this.gbtnMin.Location = new System.Drawing.Point(633, 0);
+            this.gbtnMin.Location = new System.Drawing.Point(949, 0);
+            this.gbtnMin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbtnMin.Name = "gbtnMin";
             this.gbtnMin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gbtnMin.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gbtnMin.OnHoverForeColor = System.Drawing.Color.White;
             this.gbtnMin.OnHoverImage = null;
             this.gbtnMin.OnPressedColor = System.Drawing.Color.Black;
-            this.gbtnMin.Size = new System.Drawing.Size(40, 38);
+            this.gbtnMin.Size = new System.Drawing.Size(60, 58);
             this.gbtnMin.TabIndex = 5;
             this.gbtnMin.Click += new System.EventHandler(this.gbtnMin_Click);
             // 
@@ -150,14 +178,15 @@
             this.gbtnMax.Image = global::WFAContact.Properties.Resources.max_64px;
             this.gbtnMax.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gbtnMax.ImageSize = new System.Drawing.Size(40, 40);
-            this.gbtnMax.Location = new System.Drawing.Point(673, 0);
+            this.gbtnMax.Location = new System.Drawing.Point(1009, 0);
+            this.gbtnMax.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbtnMax.Name = "gbtnMax";
             this.gbtnMax.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gbtnMax.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gbtnMax.OnHoverForeColor = System.Drawing.Color.White;
             this.gbtnMax.OnHoverImage = null;
             this.gbtnMax.OnPressedColor = System.Drawing.Color.Black;
-            this.gbtnMax.Size = new System.Drawing.Size(40, 38);
+            this.gbtnMax.Size = new System.Drawing.Size(60, 58);
             this.gbtnMax.TabIndex = 4;
             this.gbtnMax.Click += new System.EventHandler(this.gbtnMax_Click);
             // 
@@ -175,44 +204,47 @@
             this.gbtnExit.Image = global::WFAContact.Properties.Resources.exit_64px;
             this.gbtnExit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gbtnExit.ImageSize = new System.Drawing.Size(40, 40);
-            this.gbtnExit.Location = new System.Drawing.Point(713, 0);
+            this.gbtnExit.Location = new System.Drawing.Point(1069, 0);
+            this.gbtnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbtnExit.Name = "gbtnExit";
             this.gbtnExit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gbtnExit.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gbtnExit.OnHoverForeColor = System.Drawing.Color.White;
             this.gbtnExit.OnHoverImage = null;
             this.gbtnExit.OnPressedColor = System.Drawing.Color.Black;
-            this.gbtnExit.Size = new System.Drawing.Size(50, 38);
+            this.gbtnExit.Size = new System.Drawing.Size(75, 58);
             this.gbtnExit.TabIndex = 3;
             this.gbtnExit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gbtnExit.Click += new System.EventHandler(this.gbtnExit_Click);
             // 
-            // gTxtNumber
+            // gTxtApellidos
             // 
-            this.gTxtNumber.BackColor = System.Drawing.Color.Transparent;
-            this.gTxtNumber.BaseColor = System.Drawing.SystemColors.Window;
-            this.gTxtNumber.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gTxtNumber.FocusedBaseColor = System.Drawing.Color.White;
-            this.gTxtNumber.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.gTxtNumber.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtNumber.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.gTxtNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtNumber.Location = new System.Drawing.Point(65, 100);
-            this.gTxtNumber.Name = "gTxtNumber";
-            this.gTxtNumber.PasswordChar = '\0';
-            this.gTxtNumber.Radius = 15;
-            this.gTxtNumber.SelectedText = "";
-            this.gTxtNumber.Size = new System.Drawing.Size(464, 45);
-            this.gTxtNumber.TabIndex = 6;
+            this.gTxtApellidos.BackColor = System.Drawing.Color.Transparent;
+            this.gTxtApellidos.BaseColor = System.Drawing.SystemColors.Window;
+            this.gTxtApellidos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtApellidos.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gTxtApellidos.FocusedBaseColor = System.Drawing.Color.White;
+            this.gTxtApellidos.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.gTxtApellidos.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtApellidos.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.gTxtApellidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtApellidos.Location = new System.Drawing.Point(224, 297);
+            this.gTxtApellidos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtApellidos.Name = "gTxtApellidos";
+            this.gTxtApellidos.PasswordChar = '\0';
+            this.gTxtApellidos.Radius = 15;
+            this.gTxtApellidos.SelectedText = "";
+            this.gTxtApellidos.Size = new System.Drawing.Size(696, 74);
+            this.gTxtApellidos.TabIndex = 7;
             // 
             // fContact
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 503);
+            this.ClientSize = new System.Drawing.Size(1144, 774);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "fContact";
             this.Text = "fContact";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.fContact_MouseDown);
@@ -237,5 +269,6 @@
         private Guna.UI.WinForms.GunaButton gbtnExit;
         private Guna.UI.WinForms.GunaTextBox gTxtNombre;
         private Guna.UI.WinForms.GunaTextBox gTxtNumber;
+        private Guna.UI.WinForms.GunaTextBox gTxtApellidos;
     }
 }
