@@ -50,6 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos\dConexion.cs" />
+    <Compile Include="Datos\dContactData.cs" />
+    <Compile Include="Logica\lContact.cs" />
     <Compile Include="Presentacion\Contacts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +83,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\WFAContact.Logica.lContact.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -102,10 +106,7 @@
   <ItemGroup>
     <None Include="Resources\min_64px.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Datos\" />
-    <Folder Include="Logica\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\icons8_google_web_search_60px.png" />
   </ItemGroup>

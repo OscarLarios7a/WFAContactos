@@ -8,15 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WFAContact.Logica;
+using WFAContact.Datos;
 
 namespace WFAContact.Presentacion
 {
     public partial class fContact : Form
     {
+        //Declaracion  de la variable de conexion 
+        private dContactData data;
         int m, mx, my;
         public fContact()
         {
             InitializeComponent();
+            data = new dContactData();
         }
 
         private void gbtnMin_Click(object sender, EventArgs e)
@@ -69,7 +73,7 @@ namespace WFAContact.Presentacion
 
         private void gbtnAceptar_Click(object sender, EventArgs e)
         {
-
+            insertarContacto();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -94,8 +98,10 @@ namespace WFAContact.Presentacion
             contact.Apellidos = gTxtApellidos.Text;
             contact.Telefono = gTxtTelefono.Text;
             contact.Direccion = gTxtDireccion.Text;
-
+            data.guardarContact(contact);
         }
+
+        
         #endregion
 
 

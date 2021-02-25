@@ -7,15 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WFAContact.Logica;
+using WFAContact.Datos;
+
 
 namespace WFAContact.Presentacion
 {
     public partial class Contacts : Form
     {
+        //creo una variable global para el listado de contactos
+        private dContactData data;
         int m, mx, my;
         public Contacts()
         {
             InitializeComponent();
+            data = new dContactData();
         }
 
         private void gbtnExit_Click(object sender, EventArgs e)
@@ -43,7 +49,7 @@ namespace WFAContact.Presentacion
 
         private void Contacts_Load(object sender, EventArgs e)
         {
-
+            PopulateContacts();
         }
 
         private void gbtnBuscar_Click(object sender, EventArgs e)
@@ -85,6 +91,11 @@ namespace WFAContact.Presentacion
             fContact fcontact = new fContact();
             fcontact.Enabled = true;
             fcontact.Show();
+        }
+        private void PopulateContacts()
+        {
+            List<lContact> contacts = data.getContacts();
+            gdgvContactos.DataSource = contacts;
         }
         #endregion
 

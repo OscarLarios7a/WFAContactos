@@ -34,23 +34,32 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.gbtnMin = new Guna.UI.WinForms.GunaButton();
+            this.gbtnMax = new Guna.UI.WinForms.GunaButton();
+            this.gbtnExit = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.gLblBuscar = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel5 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
+            this.lContactBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.gunaPanel4 = new Guna.UI.WinForms.GunaPanel();
-            this.gTxtBuscar = new Guna.UI.WinForms.GunaTextBox();
             this.gbtnAgregar = new Guna.UI.WinForms.GunaButton();
             this.gbtnBuscar = new Guna.UI.WinForms.GunaButton();
-            this.gbtnMin = new Guna.UI.WinForms.GunaButton();
-            this.gbtnMax = new Guna.UI.WinForms.GunaButton();
-            this.gbtnExit = new Guna.UI.WinForms.GunaButton();
+            this.gTxtBuscar = new Guna.UI.WinForms.GunaTextBox();
+            this.lContactBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gdgvContactos = new Guna.UI.WinForms.GunaDataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellidosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel3.SuspendLayout();
             this.gunaPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lContactBindingSource1)).BeginInit();
             this.gunaPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lContactBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gdgvContactos)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -67,20 +76,96 @@
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(885, 40);
+            this.gunaPanel1.Size = new System.Drawing.Size(942, 40);
             this.gunaPanel1.TabIndex = 0;
             this.gunaPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPanel1_Paint);
             this.gunaPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.gunaPanel1_MouseDown);
             this.gunaPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gunaPanel1_MouseMove);
             this.gunaPanel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.gunaPanel1_MouseUp);
             // 
+            // gbtnMin
+            // 
+            this.gbtnMin.AnimationHoverSpeed = 0.07F;
+            this.gbtnMin.AnimationSpeed = 0.03F;
+            this.gbtnMin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(145)))), ((int)(((byte)(61)))));
+            this.gbtnMin.BorderColor = System.Drawing.Color.Black;
+            this.gbtnMin.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnMin.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gbtnMin.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnMin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnMin.ForeColor = System.Drawing.Color.White;
+            this.gbtnMin.Image = global::WFAContact.Properties.Resources.min_64px;
+            this.gbtnMin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gbtnMin.ImageSize = new System.Drawing.Size(40, 40);
+            this.gbtnMin.Location = new System.Drawing.Point(812, 0);
+            this.gbtnMin.Name = "gbtnMin";
+            this.gbtnMin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gbtnMin.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gbtnMin.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnMin.OnHoverImage = null;
+            this.gbtnMin.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnMin.Size = new System.Drawing.Size(40, 40);
+            this.gbtnMin.TabIndex = 2;
+            this.gbtnMin.Click += new System.EventHandler(this.gbtnMin_Click);
+            // 
+            // gbtnMax
+            // 
+            this.gbtnMax.AnimationHoverSpeed = 0.07F;
+            this.gbtnMax.AnimationSpeed = 0.03F;
+            this.gbtnMax.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(55)))), ((int)(((byte)(64)))));
+            this.gbtnMax.BorderColor = System.Drawing.Color.Black;
+            this.gbtnMax.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnMax.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gbtnMax.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnMax.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnMax.ForeColor = System.Drawing.Color.White;
+            this.gbtnMax.Image = global::WFAContact.Properties.Resources.max_64px;
+            this.gbtnMax.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gbtnMax.ImageSize = new System.Drawing.Size(40, 40);
+            this.gbtnMax.Location = new System.Drawing.Point(852, 0);
+            this.gbtnMax.Name = "gbtnMax";
+            this.gbtnMax.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gbtnMax.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gbtnMax.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnMax.OnHoverImage = null;
+            this.gbtnMax.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnMax.Size = new System.Drawing.Size(40, 40);
+            this.gbtnMax.TabIndex = 1;
+            this.gbtnMax.Click += new System.EventHandler(this.gbtnMax_Click);
+            // 
+            // gbtnExit
+            // 
+            this.gbtnExit.AnimationHoverSpeed = 0.07F;
+            this.gbtnExit.AnimationSpeed = 0.03F;
+            this.gbtnExit.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
+            this.gbtnExit.BorderColor = System.Drawing.Color.Black;
+            this.gbtnExit.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gbtnExit.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnExit.ForeColor = System.Drawing.Color.White;
+            this.gbtnExit.Image = global::WFAContact.Properties.Resources.exit_64px;
+            this.gbtnExit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gbtnExit.ImageSize = new System.Drawing.Size(40, 40);
+            this.gbtnExit.Location = new System.Drawing.Point(892, 0);
+            this.gbtnExit.Name = "gbtnExit";
+            this.gbtnExit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gbtnExit.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gbtnExit.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnExit.OnHoverImage = null;
+            this.gbtnExit.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnExit.Size = new System.Drawing.Size(50, 40);
+            this.gbtnExit.TabIndex = 0;
+            this.gbtnExit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gbtnExit.Click += new System.EventHandler(this.gbtnExit_Click);
+            // 
             // gunaPanel2
             // 
             this.gunaPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gunaPanel2.Location = new System.Drawing.Point(0, 555);
+            this.gunaPanel2.Location = new System.Drawing.Point(0, 583);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(885, 26);
+            this.gunaPanel2.Size = new System.Drawing.Size(942, 26);
             this.gunaPanel2.TabIndex = 1;
             // 
             // gLblBuscar
@@ -101,75 +186,21 @@
             this.gunaPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaPanel3.Location = new System.Drawing.Point(0, 40);
             this.gunaPanel3.Name = "gunaPanel3";
-            this.gunaPanel3.Size = new System.Drawing.Size(885, 515);
+            this.gunaPanel3.Size = new System.Drawing.Size(942, 543);
             this.gunaPanel3.TabIndex = 4;
             // 
             // gunaPanel5
             // 
-            this.gunaPanel5.Controls.Add(this.gunaDataGridView1);
+            this.gunaPanel5.Controls.Add(this.gdgvContactos);
             this.gunaPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaPanel5.Location = new System.Drawing.Point(0, 75);
             this.gunaPanel5.Name = "gunaPanel5";
-            this.gunaPanel5.Size = new System.Drawing.Size(885, 440);
+            this.gunaPanel5.Size = new System.Drawing.Size(942, 468);
             this.gunaPanel5.TabIndex = 6;
             // 
-            // gunaDataGridView1
+            // lContactBindingSource1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gunaDataGridView1.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.gunaDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaDataGridView1.EnableHeadersVisualStyles = false;
-            this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.gunaDataGridView1.Name = "gunaDataGridView1";
-            this.gunaDataGridView1.RowHeadersVisible = false;
-            this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(885, 440);
-            this.gunaDataGridView1.TabIndex = 0;
-            this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.gunaDataGridView1.ThemeStyle.ReadOnly = false;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.lContactBindingSource1.DataSource = typeof(WFAContact.Logica.lContact);
             // 
             // gunaPanel4
             // 
@@ -180,27 +211,8 @@
             this.gunaPanel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel4.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel4.Name = "gunaPanel4";
-            this.gunaPanel4.Size = new System.Drawing.Size(885, 75);
+            this.gunaPanel4.Size = new System.Drawing.Size(942, 75);
             this.gunaPanel4.TabIndex = 5;
-            // 
-            // gTxtBuscar
-            // 
-            this.gTxtBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.gTxtBuscar.BaseColor = System.Drawing.SystemColors.Window;
-            this.gTxtBuscar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtBuscar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gTxtBuscar.FocusedBaseColor = System.Drawing.Color.White;
-            this.gTxtBuscar.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.gTxtBuscar.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtBuscar.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.gTxtBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtBuscar.Location = new System.Drawing.Point(112, 15);
-            this.gTxtBuscar.Name = "gTxtBuscar";
-            this.gTxtBuscar.PasswordChar = '\0';
-            this.gTxtBuscar.Radius = 15;
-            this.gTxtBuscar.SelectedText = "";
-            this.gTxtBuscar.Size = new System.Drawing.Size(464, 45);
-            this.gTxtBuscar.TabIndex = 4;
             // 
             // gbtnAgregar
             // 
@@ -256,88 +268,131 @@
             this.gbtnBuscar.Text = "Buscar";
             this.gbtnBuscar.Click += new System.EventHandler(this.gbtnBuscar_Click);
             // 
-            // gbtnMin
+            // gTxtBuscar
             // 
-            this.gbtnMin.AnimationHoverSpeed = 0.07F;
-            this.gbtnMin.AnimationSpeed = 0.03F;
-            this.gbtnMin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(145)))), ((int)(((byte)(61)))));
-            this.gbtnMin.BorderColor = System.Drawing.Color.Black;
-            this.gbtnMin.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gbtnMin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gbtnMin.FocusedColor = System.Drawing.Color.Empty;
-            this.gbtnMin.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gbtnMin.ForeColor = System.Drawing.Color.White;
-            this.gbtnMin.Image = global::WFAContact.Properties.Resources.min_64px;
-            this.gbtnMin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gbtnMin.ImageSize = new System.Drawing.Size(40, 40);
-            this.gbtnMin.Location = new System.Drawing.Point(755, 0);
-            this.gbtnMin.Name = "gbtnMin";
-            this.gbtnMin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gbtnMin.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gbtnMin.OnHoverForeColor = System.Drawing.Color.White;
-            this.gbtnMin.OnHoverImage = null;
-            this.gbtnMin.OnPressedColor = System.Drawing.Color.Black;
-            this.gbtnMin.Size = new System.Drawing.Size(40, 40);
-            this.gbtnMin.TabIndex = 2;
-            this.gbtnMin.Click += new System.EventHandler(this.gbtnMin_Click);
+            this.gTxtBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.gTxtBuscar.BaseColor = System.Drawing.SystemColors.Window;
+            this.gTxtBuscar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtBuscar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gTxtBuscar.FocusedBaseColor = System.Drawing.Color.White;
+            this.gTxtBuscar.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.gTxtBuscar.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtBuscar.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.gTxtBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtBuscar.Location = new System.Drawing.Point(112, 15);
+            this.gTxtBuscar.Name = "gTxtBuscar";
+            this.gTxtBuscar.PasswordChar = '\0';
+            this.gTxtBuscar.Radius = 15;
+            this.gTxtBuscar.SelectedText = "";
+            this.gTxtBuscar.Size = new System.Drawing.Size(464, 45);
+            this.gTxtBuscar.TabIndex = 4;
             // 
-            // gbtnMax
+            // lContactBindingSource
             // 
-            this.gbtnMax.AnimationHoverSpeed = 0.07F;
-            this.gbtnMax.AnimationSpeed = 0.03F;
-            this.gbtnMax.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(55)))), ((int)(((byte)(64)))));
-            this.gbtnMax.BorderColor = System.Drawing.Color.Black;
-            this.gbtnMax.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gbtnMax.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gbtnMax.FocusedColor = System.Drawing.Color.Empty;
-            this.gbtnMax.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gbtnMax.ForeColor = System.Drawing.Color.White;
-            this.gbtnMax.Image = global::WFAContact.Properties.Resources.max_64px;
-            this.gbtnMax.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gbtnMax.ImageSize = new System.Drawing.Size(40, 40);
-            this.gbtnMax.Location = new System.Drawing.Point(795, 0);
-            this.gbtnMax.Name = "gbtnMax";
-            this.gbtnMax.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gbtnMax.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gbtnMax.OnHoverForeColor = System.Drawing.Color.White;
-            this.gbtnMax.OnHoverImage = null;
-            this.gbtnMax.OnPressedColor = System.Drawing.Color.Black;
-            this.gbtnMax.Size = new System.Drawing.Size(40, 40);
-            this.gbtnMax.TabIndex = 1;
-            this.gbtnMax.Click += new System.EventHandler(this.gbtnMax_Click);
+            this.lContactBindingSource.DataSource = typeof(WFAContact.Logica.lContact);
             // 
-            // gbtnExit
+            // gdgvContactos
             // 
-            this.gbtnExit.AnimationHoverSpeed = 0.07F;
-            this.gbtnExit.AnimationSpeed = 0.03F;
-            this.gbtnExit.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
-            this.gbtnExit.BorderColor = System.Drawing.Color.Black;
-            this.gbtnExit.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gbtnExit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gbtnExit.FocusedColor = System.Drawing.Color.Empty;
-            this.gbtnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gbtnExit.ForeColor = System.Drawing.Color.White;
-            this.gbtnExit.Image = global::WFAContact.Properties.Resources.exit_64px;
-            this.gbtnExit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gbtnExit.ImageSize = new System.Drawing.Size(40, 40);
-            this.gbtnExit.Location = new System.Drawing.Point(835, 0);
-            this.gbtnExit.Name = "gbtnExit";
-            this.gbtnExit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gbtnExit.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gbtnExit.OnHoverForeColor = System.Drawing.Color.White;
-            this.gbtnExit.OnHoverImage = null;
-            this.gbtnExit.OnPressedColor = System.Drawing.Color.Black;
-            this.gbtnExit.Size = new System.Drawing.Size(50, 40);
-            this.gbtnExit.TabIndex = 0;
-            this.gbtnExit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gbtnExit.Click += new System.EventHandler(this.gbtnExit_Click);
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gdgvContactos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gdgvContactos.AutoGenerateColumns = false;
+            this.gdgvContactos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gdgvContactos.BackgroundColor = System.Drawing.Color.White;
+            this.gdgvContactos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gdgvContactos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gdgvContactos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gdgvContactos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.gdgvContactos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gdgvContactos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nombresDataGridViewTextBoxColumn,
+            this.apellidosDataGridViewTextBoxColumn,
+            this.telefonoDataGridViewTextBoxColumn,
+            this.direccionDataGridViewTextBoxColumn});
+            this.gdgvContactos.DataSource = this.lContactBindingSource;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gdgvContactos.DefaultCellStyle = dataGridViewCellStyle3;
+            this.gdgvContactos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gdgvContactos.EnableHeadersVisualStyles = false;
+            this.gdgvContactos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gdgvContactos.Location = new System.Drawing.Point(0, 0);
+            this.gdgvContactos.Name = "gdgvContactos";
+            this.gdgvContactos.RowHeadersVisible = false;
+            this.gdgvContactos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gdgvContactos.Size = new System.Drawing.Size(942, 468);
+            this.gdgvContactos.TabIndex = 0;
+            this.gdgvContactos.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.gdgvContactos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.gdgvContactos.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.gdgvContactos.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.gdgvContactos.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.gdgvContactos.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.gdgvContactos.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.gdgvContactos.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gdgvContactos.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gdgvContactos.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gdgvContactos.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.gdgvContactos.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.gdgvContactos.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gdgvContactos.ThemeStyle.HeaderStyle.Height = 21;
+            this.gdgvContactos.ThemeStyle.ReadOnly = false;
+            this.gdgvContactos.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.gdgvContactos.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gdgvContactos.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.gdgvContactos.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gdgvContactos.ThemeStyle.RowsStyle.Height = 22;
+            this.gdgvContactos.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gdgvContactos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // nombresDataGridViewTextBoxColumn
+            // 
+            this.nombresDataGridViewTextBoxColumn.DataPropertyName = "Nombres";
+            this.nombresDataGridViewTextBoxColumn.HeaderText = "Nombres";
+            this.nombresDataGridViewTextBoxColumn.Name = "nombresDataGridViewTextBoxColumn";
+            // 
+            // apellidosDataGridViewTextBoxColumn
+            // 
+            this.apellidosDataGridViewTextBoxColumn.DataPropertyName = "Apellidos";
+            this.apellidosDataGridViewTextBoxColumn.HeaderText = "Apellidos";
+            this.apellidosDataGridViewTextBoxColumn.Name = "apellidosDataGridViewTextBoxColumn";
+            // 
+            // telefonoDataGridViewTextBoxColumn
+            // 
+            this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono";
+            this.telefonoDataGridViewTextBoxColumn.HeaderText = "Telefono";
+            this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
+            // 
+            // direccionDataGridViewTextBoxColumn
+            // 
+            this.direccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion";
+            this.direccionDataGridViewTextBoxColumn.HeaderText = "Direccion";
+            this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
             // 
             // Contacts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ClientSize = new System.Drawing.Size(885, 581);
+            this.ClientSize = new System.Drawing.Size(942, 609);
             this.Controls.Add(this.gunaPanel3);
             this.Controls.Add(this.gunaPanel2);
             this.Controls.Add(this.gunaPanel1);
@@ -348,9 +403,11 @@
             this.gunaPanel1.ResumeLayout(false);
             this.gunaPanel3.ResumeLayout(false);
             this.gunaPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lContactBindingSource1)).EndInit();
             this.gunaPanel4.ResumeLayout(false);
             this.gunaPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lContactBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gdgvContactos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -365,11 +422,18 @@
         private Guna.UI.WinForms.GunaButton gbtnExit;
         private Guna.UI.WinForms.GunaPanel gunaPanel3;
         private Guna.UI.WinForms.GunaPanel gunaPanel5;
-        private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
         private Guna.UI.WinForms.GunaPanel gunaPanel4;
         private Guna.UI.WinForms.GunaLabel gLblBuscar;
         private Guna.UI.WinForms.GunaTextBox gTxtBuscar;
         private Guna.UI.WinForms.GunaButton gbtnAgregar;
         private Guna.UI.WinForms.GunaButton gbtnBuscar;
+        private System.Windows.Forms.BindingSource lContactBindingSource;
+        private System.Windows.Forms.BindingSource lContactBindingSource1;
+        private Guna.UI.WinForms.GunaDataGridView gdgvContactos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombresDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apellidosDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
     }
 }
