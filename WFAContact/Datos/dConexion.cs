@@ -80,5 +80,39 @@ namespace WFAContact.Datos
             finally { conection.Close(); }
             return contacts;
         }
+
+        public void updateContact(lContact contact)
+        {
+            try
+            {
+                conection.Open();
+                //se realizara el Query(Instruccion SQL) en ves de realizarlo por un Procedimiento Almacenado
+                string query = @"UPDATE Contact SET Nombres=@Nombres,Apellidos=@Apellidos,Telefono=@Telefono,Direccion=@Direccion WHERE Id=@Id";
+
+                //esta es la forma normal por parametro y valor agregando el id 
+                SqlParameter id = new SqlParameter("@Id", contact.Id);
+                SqlParameter nombre = new SqlParameter("@Nombres", contact.Nombres);
+                SqlParameter apellido = new SqlParameter("@Apellidos", contact.Apellidos);
+                SqlParameter telefono = new SqlParameter("@Telefono", contact.Telefono);
+                SqlParameter direccion = new SqlParameter("@Direccion", contact.Direccion);
+
+                SqlCommand command = new SqlCommand(query, conection);
+                command.Parameters.Add(id);
+                command.Parameters.Add(nombre);
+                command.Parameters.Add(apellido);
+                command.Parameters.Add(telefono);
+                command.Parameters.Add(direccion);
+
+                command.ExecuteNonQuery();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { conection.Close(); }
+
+        }
     }
 }

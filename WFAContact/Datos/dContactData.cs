@@ -24,9 +24,10 @@ namespace WFAContact.Datos
             {
                cnx.insertContact(contact);
             }
-            //else {
-            //    //cnx.updateContact; 
-            //}
+            else
+            {
+                cnx.updateContact(contact);
+            }
             return contact;
         }
         public List<lContact> getContacts()

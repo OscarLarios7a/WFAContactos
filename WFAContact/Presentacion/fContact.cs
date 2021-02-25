@@ -16,6 +16,7 @@ namespace WFAContact.Presentacion
     {
         //Declaracion  de la variable de conexion 
         private dContactData data;
+        private lContact lcontact;
         int m, mx, my;
         public fContact()
         {
@@ -42,8 +43,9 @@ namespace WFAContact.Presentacion
         private void gbtnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-            Contacts contacts = new Contacts();
-            contacts.Show();
+            //Contacts contacts = new Contacts();
+            //contacts.Show();
+            ((Contacts)this.Owner).PopulateContacts();
         }
 
        
@@ -74,6 +76,10 @@ namespace WFAContact.Presentacion
         private void gbtnAceptar_Click(object sender, EventArgs e)
         {
             insertarContacto();
+            limpiarCajasTxt();
+            this.Close();
+            ((Contacts)this.Owner).PopulateContacts();
+
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -98,10 +104,34 @@ namespace WFAContact.Presentacion
             contact.Apellidos = gTxtApellidos.Text;
             contact.Telefono = gTxtTelefono.Text;
             contact.Direccion = gTxtDireccion.Text;
+
+            contact.Id = lcontact != null ? lcontact.Id : 0;
+
             data.guardarContact(contact);
         }
 
-        
+        public void loadContact(lContact contact)
+        {
+            lcontact = contact;
+            if (contact!=null)
+            {
+                limpiarFContact();
+                gTxtNombre.Text = contact.Nombres;
+                gTxtApellidos.Text = contact.Apellidos;
+                gTxtTelefono.Text = contact.Telefono;
+                gTxtDireccion.Text = contact.Direccion;
+            }
+        }
+        // Limpiar el Formulario de fContact 
+        private void limpiarFContact()
+        {
+            gTxtNombre.Text = string.Empty;
+            gTxtApellidos.Text = string.Empty;
+            gTxtTelefono.Text = string.Empty;
+            gTxtDireccion.Text = string.Empty;
+           
+        }
+
         #endregion
 
 

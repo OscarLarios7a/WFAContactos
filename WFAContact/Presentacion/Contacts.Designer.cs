@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.gbtnMin = new Guna.UI.WinForms.GunaButton();
@@ -41,25 +38,30 @@
             this.gLblBuscar = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel5 = new Guna.UI.WinForms.GunaPanel();
-            this.lContactBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.gunaPanel4 = new Guna.UI.WinForms.GunaPanel();
             this.gbtnAgregar = new Guna.UI.WinForms.GunaButton();
             this.gbtnBuscar = new Guna.UI.WinForms.GunaButton();
             this.gTxtBuscar = new Guna.UI.WinForms.GunaTextBox();
-            this.lContactBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gdgvContactos = new Guna.UI.WinForms.GunaDataGridView();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.gdgvContactos = new System.Windows.Forms.DataGridView();
+            this.Editar = new System.Windows.Forms.DataGridViewLinkColumn();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellidosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lContactBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.lContactBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lContactBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel3.SuspendLayout();
             this.gunaPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lContactBindingSource1)).BeginInit();
             this.gunaPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lContactBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gdgvContactos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lContactBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lContactBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lContactBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -198,10 +200,6 @@
             this.gunaPanel5.Size = new System.Drawing.Size(942, 468);
             this.gunaPanel5.TabIndex = 6;
             // 
-            // lContactBindingSource1
-            // 
-            this.lContactBindingSource1.DataSource = typeof(WFAContact.Logica.lContact);
-            // 
             // gunaPanel4
             // 
             this.gunaPanel4.Controls.Add(this.gbtnAgregar);
@@ -287,105 +285,97 @@
             this.gTxtBuscar.Size = new System.Drawing.Size(464, 45);
             this.gTxtBuscar.TabIndex = 4;
             // 
-            // lContactBindingSource
+            // dataGridViewImageColumn1
             // 
-            this.lContactBindingSource.DataSource = typeof(WFAContact.Logica.lContact);
+            this.dataGridViewImageColumn1.HeaderText = "Eliminar";
+            this.dataGridViewImageColumn1.Image = global::WFAContact.Properties.Resources.icons8_delete_trash_64px;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Width = 471;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.HeaderText = "Editar";
+            this.dataGridViewImageColumn2.Image = global::WFAContact.Properties.Resources.icons8_edit_file_100px;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Width = 471;
             // 
             // gdgvContactos
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gdgvContactos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gdgvContactos.AutoGenerateColumns = false;
-            this.gdgvContactos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gdgvContactos.BackgroundColor = System.Drawing.Color.White;
-            this.gdgvContactos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gdgvContactos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gdgvContactos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gdgvContactos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gdgvContactos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gdgvContactos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.nombresDataGridViewTextBoxColumn,
             this.apellidosDataGridViewTextBoxColumn,
             this.telefonoDataGridViewTextBoxColumn,
-            this.direccionDataGridViewTextBoxColumn});
-            this.gdgvContactos.DataSource = this.lContactBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gdgvContactos.DefaultCellStyle = dataGridViewCellStyle3;
+            this.direccionDataGridViewTextBoxColumn,
+            this.Editar});
+            this.gdgvContactos.DataSource = this.lContactBindingSource2;
             this.gdgvContactos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gdgvContactos.EnableHeadersVisualStyles = false;
-            this.gdgvContactos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gdgvContactos.Location = new System.Drawing.Point(0, 0);
             this.gdgvContactos.Name = "gdgvContactos";
-            this.gdgvContactos.RowHeadersVisible = false;
-            this.gdgvContactos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gdgvContactos.Size = new System.Drawing.Size(942, 468);
             this.gdgvContactos.TabIndex = 0;
-            this.gdgvContactos.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.gdgvContactos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.gdgvContactos.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.gdgvContactos.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.gdgvContactos.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.gdgvContactos.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gdgvContactos.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.gdgvContactos.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gdgvContactos.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gdgvContactos.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gdgvContactos.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gdgvContactos.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gdgvContactos.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gdgvContactos.ThemeStyle.HeaderStyle.Height = 21;
-            this.gdgvContactos.ThemeStyle.ReadOnly = false;
-            this.gdgvContactos.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.gdgvContactos.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gdgvContactos.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gdgvContactos.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gdgvContactos.ThemeStyle.RowsStyle.Height = 22;
-            this.gdgvContactos.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gdgvContactos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gdgvContactos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdgvContactos_CellClick);
+            this.gdgvContactos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdgvContactos_CellContentClick_1);
+            // 
+            // Editar
+            // 
+            this.Editar.ActiveLinkColor = System.Drawing.Color.DimGray;
+            this.Editar.HeaderText = "Editar";
+            this.Editar.LinkColor = System.Drawing.Color.MediumSeaGreen;
+            this.Editar.Name = "Editar";
+            this.Editar.ReadOnly = true;
+            this.Editar.Text = "Editar";
+            this.Editar.UseColumnTextForLinkValue = true;
+            this.Editar.Width = 40;
             // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
             this.idDataGridViewTextBoxColumn.HeaderText = "Id";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nombresDataGridViewTextBoxColumn
             // 
             this.nombresDataGridViewTextBoxColumn.DataPropertyName = "Nombres";
             this.nombresDataGridViewTextBoxColumn.HeaderText = "Nombres";
             this.nombresDataGridViewTextBoxColumn.Name = "nombresDataGridViewTextBoxColumn";
+            this.nombresDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // apellidosDataGridViewTextBoxColumn
             // 
             this.apellidosDataGridViewTextBoxColumn.DataPropertyName = "Apellidos";
             this.apellidosDataGridViewTextBoxColumn.HeaderText = "Apellidos";
             this.apellidosDataGridViewTextBoxColumn.Name = "apellidosDataGridViewTextBoxColumn";
+            this.apellidosDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // telefonoDataGridViewTextBoxColumn
             // 
             this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono";
             this.telefonoDataGridViewTextBoxColumn.HeaderText = "Telefono";
             this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
+            this.telefonoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // direccionDataGridViewTextBoxColumn
             // 
             this.direccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion";
             this.direccionDataGridViewTextBoxColumn.HeaderText = "Direccion";
             this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
+            this.direccionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // lContactBindingSource2
+            // 
+            this.lContactBindingSource2.DataSource = typeof(WFAContact.Logica.lContact);
+            // 
+            // lContactBindingSource
+            // 
+            this.lContactBindingSource.DataSource = typeof(WFAContact.Logica.lContact);
+            // 
+            // lContactBindingSource1
+            // 
+            this.lContactBindingSource1.DataSource = typeof(WFAContact.Logica.lContact);
             // 
             // Contacts
             // 
@@ -403,11 +393,12 @@
             this.gunaPanel1.ResumeLayout(false);
             this.gunaPanel3.ResumeLayout(false);
             this.gunaPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.lContactBindingSource1)).EndInit();
             this.gunaPanel4.ResumeLayout(false);
             this.gunaPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lContactBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gdgvContactos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lContactBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lContactBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lContactBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -429,11 +420,15 @@
         private Guna.UI.WinForms.GunaButton gbtnBuscar;
         private System.Windows.Forms.BindingSource lContactBindingSource;
         private System.Windows.Forms.BindingSource lContactBindingSource1;
-        private Guna.UI.WinForms.GunaDataGridView gdgvContactos;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private System.Windows.Forms.DataGridView gdgvContactos;
+        private System.Windows.Forms.BindingSource lContactBindingSource2;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombresDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellidosDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewLinkColumn Editar;
     }
 }

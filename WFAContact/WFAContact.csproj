@@ -106,7 +106,9 @@
   <ItemGroup>
     <None Include="Resources\min_64px.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_trash_64px.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_google_web_search_60px.png" />
   </ItemGroup>
@@ -136,6 +138,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_cancel_subscription_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_edit_file_100px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

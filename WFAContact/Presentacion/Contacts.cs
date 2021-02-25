@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WFAContact.Logica;
 using WFAContact.Datos;
+using WFAContact.Presentacion;
 
 
 namespace WFAContact.Presentacion
@@ -17,6 +18,7 @@ namespace WFAContact.Presentacion
     {
         //creo una variable global para el listado de contactos
         private dContactData data;
+        
         int m, mx, my;
         public Contacts()
         {
@@ -83,16 +85,59 @@ namespace WFAContact.Presentacion
             else if (WindowState == FormWindowState.Minimized)
                 WindowState = FormWindowState.Normal;
         }
+
+        
+
+        private void gdgvContactos_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            ////declaracion de un objeto para manipular la celda donde damos click
+            //DataGridViewLinkCell cell = (DataGridViewLinkCell)gdgvContactos.Rows[e.RowIndex].Cells[e.ColumnIndex];
+            //fContact _fcontact = new fContact();
+            //if (cell.Value.ToString() == "Editar")
+            //{
+                
+            //    _fcontact.loadContact(new lContact
+            //    {
+            //        Id = int.Parse(gdgvContactos.Rows[e.RowIndex].Cells[0].Value.ToString()),
+            //        Nombres = gdgvContactos.Rows[e.RowIndex].Cells[1].Value.ToString(),
+            //        Apellidos = gdgvContactos.Rows[e.RowIndex].Cells[2].Value.ToString(),
+            //        Telefono = gdgvContactos.Rows[e.RowIndex].Cells[3].Value.ToString(),
+            //        Direccion = gdgvContactos.Rows[e.RowIndex].Cells[4].Value.ToString(),
+            //    });
+            //    _fcontact.ShowDialog(this);
+            //}
+            
+        }
+
+        private void gdgvContactos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //declaracion de un objeto para manipular la celda donde damos click
+            DataGridViewLinkCell cell = (DataGridViewLinkCell)gdgvContactos.Rows[e.RowIndex].Cells[e.ColumnIndex];
+            fContact _fcontact = new fContact();
+            if (cell.Value.ToString() == "Editar")
+            {
+
+                _fcontact.loadContact(new lContact
+                {
+                    Id = int.Parse(gdgvContactos.Rows[e.RowIndex].Cells[0].Value.ToString()),
+                    Nombres = gdgvContactos.Rows[e.RowIndex].Cells[1].Value.ToString(),
+                    Apellidos = gdgvContactos.Rows[e.RowIndex].Cells[2].Value.ToString(),
+                    Telefono = gdgvContactos.Rows[e.RowIndex].Cells[3].Value.ToString(),
+                    Direccion = gdgvContactos.Rows[e.RowIndex].Cells[4].Value.ToString(),
+                });
+                _fcontact.ShowDialog(this);
+            }
+        }
         #region Metodos Privados
         //Metodos privados para manipular los datos 
         private void OpenContactDialog()
         {
-            this.Hide();
+            //this.Hide();
             fContact fcontact = new fContact();
-            fcontact.Enabled = true;
-            fcontact.Show();
+            //fcontact.Enabled = true;
+            fcontact.ShowDialog(this);
         }
-        private void PopulateContacts()
+        public void PopulateContacts()
         {
             List<lContact> contacts = data.getContacts();
             gdgvContactos.DataSource = contacts;
