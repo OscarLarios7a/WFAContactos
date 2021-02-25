@@ -138,6 +138,7 @@
             this.gbtnAceptar.Size = new System.Drawing.Size(153, 46);
             this.gbtnAceptar.TabIndex = 13;
             this.gbtnAceptar.Text = "Aceptar";
+            this.gbtnAceptar.Click += new System.EventHandler(this.gbtnAceptar_Click);
             // 
             // gunaLabel3
             // 

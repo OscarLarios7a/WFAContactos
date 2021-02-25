@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WFAContact.Logica;
 
 namespace WFAContact.Presentacion
 {
@@ -66,6 +67,11 @@ namespace WFAContact.Presentacion
             limpiarCajasTxt();
         }
 
+        private void gbtnAceptar_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -80,7 +86,18 @@ namespace WFAContact.Presentacion
             gTxtDireccion.Clear();
             gTxtNombre.Focus();
         }
+
+        private void insertarContacto()
+        {
+            lContact contact = new lContact();
+            contact.Nombres = gTxtNombre.Text;
+            contact.Apellidos = gTxtApellidos.Text;
+            contact.Telefono = gTxtTelefono.Text;
+            contact.Direccion = gTxtDireccion.Text;
+
+        }
         #endregion
+
 
     }
 }
