@@ -50,14 +50,26 @@ namespace WFAContact.Datos
             finally { conection.Close(); }
         }
 
-        public List<lContact> getContacts()
+        public List<lContact> getContacts(string buscartxt=null)
         {
             List<lContact> contacts = new List<lContact>();
             try
             {
                 conection.Open();
+
                 string query = @"Select Id,Nombres,Apellidos,Telefono,Direccion From Contact";
-                SqlCommand command = new SqlCommand(query, conection);
+
+                SqlCommand command = new SqlCommand();
+
+                if (!string.IsNullOrEmpty(buscartxt))
+                {
+                    query += @" WHERE  Nombres LIKE  @buscar OR Apellidos LIKE @buscar OR Telefono LIKE  @buscar OR Direccion LIKE  @buscar";
+                    command.Parameters.AddWithValue("@buscar", $"%{buscartxt}%");
+                }
+
+                command.CommandText = query;
+                command.Connection = conection;
+
                 SqlDataReader reader = command.ExecuteReader();
 
                 while (reader.Read())

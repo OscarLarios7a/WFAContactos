@@ -56,7 +56,7 @@ namespace WFAContact.Presentacion
 
         private void gbtnBuscar_Click(object sender, EventArgs e)
         {
-
+            PopulateContacts(gTxtBuscar.Text);
         }
 
         private void gbtnAgregar_Click(object sender, EventArgs e)
@@ -146,9 +146,9 @@ namespace WFAContact.Presentacion
             //fcontact.Enabled = true;
             fcontact.ShowDialog(this);
         }
-        public void PopulateContacts()
+        public void PopulateContacts(string buscartxt=null)
         {
-            List<lContact> contacts = data.getContacts();
+            List<lContact> contacts = data.getContacts(buscartxt);
             gdgvContactos.DataSource = contacts;
         }
 

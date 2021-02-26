@@ -30,9 +30,9 @@ namespace WFAContact.Datos
             }
             return contact;
         }
-        public List<lContact> getContacts()
+        public List<lContact> getContacts(string buscartxt=null)
         {
-            return cnx.getContacts();
+            return cnx.getContacts(buscartxt);
         }
         public void deleteContacts(int id)
         {
