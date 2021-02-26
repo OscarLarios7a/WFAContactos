@@ -127,6 +127,15 @@ namespace WFAContact.Presentacion
                 });
                 _fcontact.ShowDialog(this);
             }
+            else if (cell.Value.ToString() == "Eliminar")
+            {
+                //lContact lcontact = new lContact();
+                // lcontact.Id= int.Parse(gdgvContactos.Rows[e.RowIndex].Cells[0].Value.ToString());
+
+                deleteContact(int.Parse(gdgvContactos.Rows[e.RowIndex].Cells[0].Value.ToString()));
+                PopulateContacts();
+              
+            }
         }
         #region Metodos Privados
         //Metodos privados para manipular los datos 
@@ -141,6 +150,11 @@ namespace WFAContact.Presentacion
         {
             List<lContact> contacts = data.getContacts();
             gdgvContactos.DataSource = contacts;
+        }
+
+        private void deleteContact(int id)
+        {
+            data.deleteContacts(id);
         }
         #endregion
 

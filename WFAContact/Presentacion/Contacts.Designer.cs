@@ -45,15 +45,16 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.gdgvContactos = new System.Windows.Forms.DataGridView();
-            this.Editar = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.lContactBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.lContactBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lContactBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellidosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lContactBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.lContactBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lContactBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.Editar = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.Eliminar = new System.Windows.Forms.DataGridViewLinkColumn();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel3.SuspendLayout();
             this.gunaPanel5.SuspendLayout();
@@ -309,7 +310,8 @@
             this.apellidosDataGridViewTextBoxColumn,
             this.telefonoDataGridViewTextBoxColumn,
             this.direccionDataGridViewTextBoxColumn,
-            this.Editar});
+            this.Editar,
+            this.Eliminar});
             this.gdgvContactos.DataSource = this.lContactBindingSource2;
             this.gdgvContactos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gdgvContactos.Location = new System.Drawing.Point(0, 0);
@@ -319,16 +321,17 @@
             this.gdgvContactos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdgvContactos_CellClick);
             this.gdgvContactos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdgvContactos_CellContentClick_1);
             // 
-            // Editar
+            // lContactBindingSource2
             // 
-            this.Editar.ActiveLinkColor = System.Drawing.Color.DimGray;
-            this.Editar.HeaderText = "Editar";
-            this.Editar.LinkColor = System.Drawing.Color.MediumSeaGreen;
-            this.Editar.Name = "Editar";
-            this.Editar.ReadOnly = true;
-            this.Editar.Text = "Editar";
-            this.Editar.UseColumnTextForLinkValue = true;
-            this.Editar.Width = 40;
+            this.lContactBindingSource2.DataSource = typeof(WFAContact.Logica.lContact);
+            // 
+            // lContactBindingSource
+            // 
+            this.lContactBindingSource.DataSource = typeof(WFAContact.Logica.lContact);
+            // 
+            // lContactBindingSource1
+            // 
+            this.lContactBindingSource1.DataSource = typeof(WFAContact.Logica.lContact);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -365,17 +368,24 @@
             this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
             this.direccionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // lContactBindingSource2
+            // Editar
             // 
-            this.lContactBindingSource2.DataSource = typeof(WFAContact.Logica.lContact);
+            this.Editar.ActiveLinkColor = System.Drawing.Color.DimGray;
+            this.Editar.HeaderText = "Editar";
+            this.Editar.LinkColor = System.Drawing.Color.MediumSeaGreen;
+            this.Editar.Name = "Editar";
+            this.Editar.ReadOnly = true;
+            this.Editar.Text = "Editar";
+            this.Editar.UseColumnTextForLinkValue = true;
+            this.Editar.Width = 40;
             // 
-            // lContactBindingSource
+            // Eliminar
             // 
-            this.lContactBindingSource.DataSource = typeof(WFAContact.Logica.lContact);
-            // 
-            // lContactBindingSource1
-            // 
-            this.lContactBindingSource1.DataSource = typeof(WFAContact.Logica.lContact);
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            this.Eliminar.Text = "Eliminar";
+            this.Eliminar.UseColumnTextForLinkValue = true;
             // 
             // Contacts
             // 
@@ -430,5 +440,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewLinkColumn Editar;
+        private System.Windows.Forms.DataGridViewLinkColumn Eliminar;
     }
 }

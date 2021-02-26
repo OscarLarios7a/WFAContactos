@@ -114,5 +114,30 @@ namespace WFAContact.Datos
             finally { conection.Close(); }
 
         }
+
+        public void deleteContact(int id )
+        {
+            try
+            {
+                conection.Open();
+                //se realizara el Query(Instruccion SQL) en ves de realizarlo por un Procedimiento Almacenado
+                string query = @"DELETE FROM Contact WHERE Id=@Id";
+
+              
+
+                SqlCommand command = new SqlCommand(query, conection);
+                command.Parameters.Add(new SqlParameter("@Id",id));
+                
+
+                command.ExecuteNonQuery();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { conection.Close(); }
+        }
     }
 }

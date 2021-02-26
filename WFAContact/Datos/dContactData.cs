@@ -34,5 +34,9 @@ namespace WFAContact.Datos
         {
             return cnx.getContacts();
         }
+        public void deleteContacts(int id)
+        {
+            cnx.deleteContact(id);
+        }
     }
 }
